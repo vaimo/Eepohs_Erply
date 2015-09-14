@@ -1,4 +1,5 @@
-erply/app/code/community/Eepohs/*		app/code/community/Eepohs/
-erply/app/design/adminhtml/default/default/*	app/design/adminhtml/default/default/
-erply/app/etc/modules/*				app/etc/modules/
+erply/app/code/community/Eepohs/*			app/code/community/Eepohs/
+erply/app/design/adminhtml/default/default/template/*	app/design/adminhtml/default/default/template/
+erply/app/design/adminhtml/default/default/layout/*	app/design/adminhtml/default/default/layout/
+erply/app/etc/modules/*					app/etc/modules/
 
