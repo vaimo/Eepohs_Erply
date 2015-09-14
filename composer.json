@@ -1,0 +1,19 @@
+{
+    "name": "vaimo/Eepohs_Erply",
+    "type": "magento-module",
+    "description": "Eepohs_Erply",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Eepohs"
+        }
+    ],
+    "require": {
+        "vaimo/magento": "*",
+        "magento-hackathon/magento-composer-installer": "*" 
+        
+    },
+    "extra": {
+        "vaimo-module-category": "Integration"
+    }
+}
