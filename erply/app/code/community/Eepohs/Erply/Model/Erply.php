@@ -14,6 +14,7 @@
  */
 class Eepohs_Erply_Model_Erply extends Mage_Core_Model_Abstract
 {
+    const REQUEST_LOG = 'erply_requests.log';
     private $storeID;
     private $url;
     private $code;
@@ -48,6 +49,10 @@ class Eepohs_Erply_Model_Erply extends Mage_Core_Model_Abstract
         $http->write(Zend_Http_Client::POST, $url, CURL_HTTP_VERSION_1_0, array(), $parameters);
         $responseBody = Zend_Http_Response::extractBody($http->read());
         $http->close();
+
+        if (Mage::getStoreConfig('eepohs_erply/general/log_requests')) {
+            Mage::log("REQUEST URL: " . $url . "\nREQUEST PARAMETERS:\n" . print_r($parameters, true) . "\nRESPONSE:\n" . $responseBody, null, self::REQUEST_LOG);
+        }
 
 
 

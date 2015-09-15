@@ -42,6 +42,16 @@
                             <show_in_store>0</show_in_store>                                                        
                             <source_model>adminhtml/system_config_source_yesno</source_model>                                                    
                         </log_enabled>
+                        <log_requests translate="label">                                                        
+                            <label>Log all requests:</label>                                                     
+                            <frontend_type>select</frontend_type>                                                        
+                            <sort_order>2</sort_order>                                                        
+                            <show_in_default>1</show_in_default>                                                        
+                            <show_in_website>0</show_in_website>                                                        
+                            <show_in_store>0</show_in_store>                                                        
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Recommended to use only for debugging</comment>                        
+                        </log_requests>
                     </fields>
                 </general>
                 <account translate="label">
