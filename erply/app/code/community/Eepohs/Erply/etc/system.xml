@@ -252,30 +252,6 @@
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <records_per_run>
-                            <frontend_type>text</frontend_type>
-                            <label>Records Per Run</label>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>0</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </records_per_run>
-                        <loops_per_run>
-                            <frontend_type>text</frontend_type>
-                            <label>Loops Per Run</label>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>0</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </loops_per_run>
-                        <loops_per_run>
-                            <frontend_type>text</frontend_type>
-                            <label>Loops Per Run</label>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>0</show_in_website>
-                            <show_in_store>0</show_in_store>
-                        </loops_per_run>
                         <run_every>
                             <frontend_type>text</frontend_type>
                             <label>Run Every</label>
@@ -283,8 +259,26 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
-                            <comment>Run in every X minutes [default is 5]</comment>
+                            <comment>Run in every X minutes [default: 5]</comment>
                         </run_every>
+                        <loops_per_run>
+                            <frontend_type>text</frontend_type>
+                            <label>API calls Per Run</label>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>How many API calls can be made in one run [default: 20]</comment>
+                        </loops_per_run>
+                        <records_per_run>
+                            <frontend_type>text</frontend_type>
+                            <label>Records Per API call</label>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>How many records can be retrieved with one API call [default: 25]</comment>
+                        </records_per_run>
                     </fields>
                 </queue>
             </groups>

@@ -174,4 +174,13 @@
             </erply_check_order_status>
         </jobs>
     </crontab>
+    <default>
+        <eepohs_erply>
+            <queue>
+                <run_every>5</run_every>
+                <loops_per_run>20</loops_per_run>
+                <records_per_run>25</records_per_run>
+            </queue>
+        </eepohs_erply>
+    </default>
 </config>
